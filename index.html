@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marpuri Icare</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/masterslider.main.css" type="text/css" />
+    <link rel="stylesheet" href="assets/styles/ms-fullscreen.css">
+    <script src="assets/js/jquery-v3.7.1.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <!-- header starts -->
+    <header class="container icare-header">
+        <div class="icare-header-top d-flex justify-content-between align-items-center">
+            <div class="icare-header-top">See Better-Live Brighter</div>
+            <div class="icare-header-top-links"><span><a href="#">Take Suitability-Test</a></span><span class="icare-m-l-15 icare-p-l-15"><a href="#">Book A Free Video Appointment</a></span></div>
+        </div>
+    </header>
+    
+    <section class="position-relative">
+        <div class="ms-fullscreen-template" id="slider1-wrapper">
+            <!-- masterslider -->
+            <div class="master-slider ms-skin-default" id="masterslider">
+                <div class="ms-slide slide-1">
+                    <div class="slide-pattern"></div>
+                    <img src="assets/images/blank.gif" data-src="assets/images/banner-2.jpg"
+                        alt="lorem ipsum dolor sit"  data-effect="scalebottom(1.1,1.1,50)" data-ease="easeInOutQuint"/>
+                   
+                    <h3 class="ms-layer main-white-text" data-type="text" data-effect="scalebottom(1.1,1.1,50)"
+                        data-duration="1000" data-ease="easeInOutQuint" data-delay="1000">
+                        Introducing Our First-Ever Glaucoma Core Package
+                    </h3>
+                     <h5 class="ms-layer brown-text-top" data-type="text" data-effect="rotate3dtop(00,0,0,500)"
+                        data-duration="700" data-ease="easeInOutQuint" data-delay="700">
+                        Peace of mind through personalised, consultant-led c glaucoma monitoring at Marpuri Icare, Essex
+                    </h5>
+                    <a href="#" class="ms-layer icare-primary-button" data-effect="skewleft(25,250)"
+                        data-duration="1500" data-ease="easeInOutQuint" data-delay="1200"><span>Enqire Now </span> 
+                        <img src="assets/images/arrow_outward_blue.svg" alt="arrow"/> 
+                    </a>
+                    <a href="#" class="ms-layer icare-white-button" data-effect="skewleft(25,250)"
+                        data-duration="1500" data-ease="easeInOutQuint" data-delay="1200"><span>Book a Consultation </span> 
+                        <img src="assets/images/arrow_outward_white.svg" alt="arrow"/> 
+                    </a>
+                </div>
+                <div class="ms-slide slide-2">
+                    <div class="slide-pattern"></div>
+                    <h3 class="ms-layer thin-text-white blacktext" data-type="text"
+                        data-effect="rotate3dleft(50,0,0,480)" data-duration="2000" data-ease="easeInOutQuint">
+                        MODERN
+                    </h3>
+                    <h3 class="ms-layer thin-text-black whitetext" data-type="text"
+                        data-effect="rotate3dright(-50,0,0,480)" data-duration="2000" data-ease="easeInOutQuint">
+                        DESIGN
+                    </h3>
+                    <img src="assets/images/blank.gif" data-src="assets/images/4.jpg" alt="lorem ipsum dolor sit" />
+                </div>
+                <div class="ms-slide slide-4">
+                    <div class="slide-pattern"></div>
+
+                    <div class="ms-layer box" data-effect="skewleft(15,250)" data-duration="1300"
+                        data-ease="easeOutBack">
+                    </div>
+
+                    <h4 class="ms-layer small-text" data-type="text" data-effect="skewleft(25,250)" data-duration="1000"
+                        data-ease="easeOutQuart" data-delay="500">
+                        THE BEST SOLUTION
+                    </h4>
+                    <h3 class="ms-layer medium-text" data-type="text" data-effect="skewright(25,250)"
+                        data-duration="1500" data-ease="easeOutQuart" data-delay="700">
+                        FOR YOUR
+                    </h3>
+                    <h3 class="ms-layer big-text" data-type="text" data-effect="scalebottom(1.1,1.1,50)"
+                        data-duration="1500" data-ease="easeOutQuart" data-delay="1200">
+                        BUSSINESS
+                    </h3>
+
+                    <img src="assets/images/blank.gif" data-src="assets/images/3.jpg" alt="lorem ipsum dolor sit" />
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+            <!-- end of masterslider -->
+            <div class="brush-dec brush-bottom-1"></div>
+        </div>
+        <!--End Banner Section -->
+    </section>
+
+
+    <!--Js Files-->
+    <script type="text/javascript" src="assets/js/masterslider.min.js"></script>
+    <script type="text/javascript" src="assets/js/sticky.js"></script>
+    <script type="text/javascript" src="assets/js/wow.js"></script>
+
+     <!-- Master Slider -->
+     <script type="text/javascript">
+        var slider = new MasterSlider();
+        slider.control('arrows', { insertTo: '#masterslider' });
+        slider.control('bullets');
+
+        slider.setup('masterslider', {
+            // width: 1024,
+            // height: 768,
+            // space: 5,
+            // view: 'mask',
+            // layout: 'fullscreen',
+            // fullscreenMargin: 0,    
+            // direction: 'vertical', 
+            // speed: 20,
+            // arrows: true,
+            // bullets: true,
+            // loop: true,
+            // autoplay: false,
+
+            width           : 1100,
+				height          : 700,
+				minHeight       : 0,
+				space           : 0,
+				start           : 1,
+				grabCursor      : true,
+				swipe           : true,
+				mouse           : true,
+				keyboard        : false,
+				layout          : "fullscreen",
+				wheel           : false,
+				autoplay        : false,
+                instantStartLayers:true,
+				mobileBGVideo:false,
+				loop            : false,
+				shuffle         : false,
+				preload         : 0,
+				heightLimit     : true,
+				autoHeight      : false,
+				smoothHeight    : true,
+				endPause        : false,
+				overPause       : true,
+				fillMode        : "fill",
+				centerControls  : true,
+				startOnAppear   : false,
+				layersMode      : "center",
+				autofillTarget  : "",
+				hideLayers      : false,
+				fullscreenMargin: 0,
+				speed           : 20,
+				dir             : "v",
+				responsive      : true,
+				tabletWidth     : 768,
+				tabletHeight    : null,
+				phoneWidth      : 480,
+				phoneHeight    : null,
+				sizingReference : window,
+				parallaxMode    : 'swipe',
+				view            : "flow"
+        });
+    </script>
+    <!-- Master Slider -->
+
+</body>
+</html>
