@@ -117,10 +117,11 @@
   perspective: 2000px;
   width: 100% !important;
   height: 100vh !important;
+  min-height: 100vh;
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
-  position: fixed;
+  position: relative;
   left: auto !important;
 }
 
@@ -651,7 +652,7 @@
   float: left;
   width: 10px;
   height: 10px;
-  background-color: #c7c5c573;
+  background-color: #4e4c4c94;
   border-radius: 50%;
   margin: 5px 5px !important;
   position: relative;
@@ -684,7 +685,7 @@
 .ms-bullets.ms-dir-h .ms-bullets-count {
   position: relative;
   float: right;
-  background-color: #ffffff45;
+  background-color: #ffffff6e;
   border-radius: 20px;
   padding: 6px 7px;
 }

@@ -11720,9 +11720,9 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
-  font-size: 14px;
+  font-size: 16px;
   color: #011b38;
   background-color: #ffffff;
 }
@@ -11733,37 +11733,24 @@ body {
   padding: 0;
 }
 
+ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
 img {
   width: 100%;
   height: auto;
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
-}
-
-.icare-header {
-  background-color: #014bc8;
-  padding: 10px 30px;
-  position: absolute;
-  top: 30px;
-  left: 0;
-  z-index: 9999;
-  right: 0;
-  border-radius: 14px;
-}
-.icare-header-top {
-  color: #fff;
-}
-.icare-header-top-links span {
-  border-left: 2px solid #fff;
-}
-.icare-header-top-links span a {
-  color: #fff;
-  font-weight: 500;
-}
-.icare-header-top-links span:first-child {
-  border-left: 0;
 }
 
 .icare-primary-button {
@@ -11848,6 +11835,393 @@ a, a:hover {
   transform: rotate(45deg);
 }
 
-.position-relative {
+.icare-transparent-button {
+  background-color: transparent !important;
+  color: #fff !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  padding: 10px 14px !important;
+  border-radius: 8px !important;
+  border: 1px solid #183350 !important;
+  display: inline-block;
+  line-height: 24px !important;
+}
+.icare-transparent-button img {
+  height: 24px;
+  margin-left: 6px;
+  width: 24px;
+  max-width: 24px !important;
+  transition: all 0.5s ease-in-out;
+}
+.icare-transparent-button:hover img {
+  transform: rotate(45deg);
+}
+
+.icare-animate-top-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+.icare-animate-top-section.icare-animate-scroll-view {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.icare-animate-bottom-section {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: all 0.6s ease;
+}
+.icare-animate-bottom-section.icare-animate-scroll-view {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.icare-animate-left-section {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.6s ease;
+}
+.icare-animate-left-section.icare-animate-scroll-view {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.icare-animate-right-section {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.6s ease;
+}
+.icare-animate-right-section.icare-animate-scroll-view {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.icare-type-title {
+  display: inline-block;
+  opacity: 1;
+}
+.icare-type-title span {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.icare-type-title.icare-type-scroll-view span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.icare-header {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 9999;
+  right: 0;
+}
+.icare-header-top {
+  background-color: #014bc8;
+  color: #fff;
+  padding: 10px 20px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+.icare-header-top-links span {
+  border-left: 2px solid #fff;
+}
+.icare-header-top-links span a {
+  color: #fff;
+  font-weight: 500;
+}
+.icare-header-top-links span:first-child {
+  border-left: 0;
+}
+.icare-header-main {
+  background-color: #ffffff;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.icare-header-main-list ul {
+  padding: 0;
+  margin: 0;
+}
+.icare-header-main-list ul li {
+  padding: 10px;
+}
+.icare-header-main-list ul li a {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.icare-home-slider {
+  min-height: 100vh;
+}
+
+.icare-section {
+  padding: 50px 0;
+}
+.icare-section-header-caption {
+  color: #4798d2;
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+.icare-section-header-caption.header-caption-white {
+  color: #fff;
+}
+.icare-section-header-title {
+  color: #000036;
+  font-weight: 800;
+  font-size: 38px;
+  padding-bottom: 20px;
+  line-height: 44px;
+}
+.icare-section-header-title.header-title-white {
+  color: #fff;
+}
+.icare-section p {
+  color: #011b38;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.icare-professional-icon {
+  width: 80px;
+  margin-right: 10px;
+}
+.icare-professional-content-head {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.icare-professional-right {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-left: 160px;
+  height: 520px;
+}
+.icare-professional-right-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  overflow: hidden;
+  clip-path: polygon(0px -110px, 100% 200px, 100% 100%, 100% 100%, 0 100%);
+}
+.icare-professional-right-badge {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #004BCE;
+  color: #fff;
+  padding: 20px;
+  height: 180px;
+  border-radius: 20px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 66% 100%, 0% 64%);
+}
+.icare-professional-right-badge h2 {
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0;
+}
+.icare-professional-right-badge p {
+  font-size: 14px;
+  line-height: 1.3;
+  margin: 5px 0 0;
+  font-weight: 600;
+  color: #fff;
+}
+
+.glaucoma-top-card {
+  padding: 26px;
+  border-radius: 22px;
+  background-color: #d9defe;
+  position: relative;
+  min-height: 320px;
+}
+.glaucoma-top-card-title {
+  font-size: 22px;
+  color: #000000;
+  font-weight: 600;
+  line-height: 30px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.glaucoma-top-card-icon {
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.glaucoma-top-card-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.glaucoma-top-card-phone-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 8px;
+}
+.glaucoma-top-card-phone-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.glaucoma-top-card-phone-number {
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 10px;
+  color: #011b38;
+}
+.glaucoma-top-card-consultation-slot {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.glaucoma-top-card-consultation-slot-day {
+  font-weight: 500;
+}
+.glaucoma-top-card-consultation-slot-time {
+  font-weight: 600;
+}
+.glaucoma-top-card.glaucoma-card-video-appointment {
+  background-color: #cbe7ff;
+}
+.glaucoma-top-card.glaucoma-card-consultation {
+  background-color: #cdeefd;
+}
+.glaucoma-top-card:hover {
+  background-color: #014bc8;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.glaucoma-top-card:hover p {
+  color: #fff;
+}
+.glaucoma-top-card:hover .icare-primary-button {
+  background-color: #ffffff !important;
+  color: #14447b !important;
+}
+.glaucoma-top-card:hover .glaucoma-top-card-title {
+  color: #fff;
+}
+.glaucoma-top-card:hover .glaucoma-top-card-phone-number {
+  color: #fff;
+}
+.glaucoma-top-card:hover .glaucoma-top-card-consultation-slot {
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.personalised-section {
+  background-color: #001b38;
+  margin-top: -160px;
+  padding-top: 200px;
+}
+
+.personalised-lifestyle-item-list {
+  counter-reset: one;
+}
+
+.personalised-lifestyle-item {
+  border-top: 1px solid #4b6179;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  counter-increment: one;
+}
+.personalised-lifestyle-item-content {
+  position: relative;
+  padding-left: calc(8% + 15px);
+}
+.personalised-lifestyle-item-content:before {
+  content: counter(one, decimal-leading-zero);
+  font-size: clamp(40px, 3vmax, 96px);
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #19324C;
+}
+.personalised-lifestyle-item-content-head {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 800;
+  padding-bottom: 15px;
+}
+.personalised-lifestyle-item-content-text {
+  color: #fff;
+  padding-bottom: 20px;
+}
+.personalised-lifestyle-item-image {
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  height: 240px;
+}
+.personalised-lifestyle-item-image img {
+  transform: translate3d(-6.66%, 0, 0) scale(1.2);
+  transition: opacity 0.35s, transform 0.45s, filter 0.35s;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.personalised-lifestyle-item:hover .personalised-lifestyle-item-image img {
+  transform: translate3d(0, 0, 0) scale(1.2);
+}
+
+.icare-glaucoma-package-section-right {
+  width: 90%;
+  height: 520px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icare-glaucoma-package-section-right-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.icare-glaucoma-package-list ul li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #000000;
+  position: relative;
+  padding-left: 40px;
+}
+.icare-glaucoma-package-list ul li::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  transform: rotate(45deg);
+  height: 1em;
+  width: 0.5em;
+  border-bottom: 0.15em solid #4798d2;
+  border-right: 0.15em solid #4798d2;
 }/*# sourceMappingURL=styles.css.map */
